@@ -1,0 +1,21 @@
+#autologin
+
+import requests
+
+userid = "<your_login_id_here>"
+password = "<your_password_here>"
+
+
+POSTLOGINURL = 'https://yourwebsitehere.com/login_page'
+REQUESTURL = 'https:////yourwebsitehere.com/home_page' 
+
+
+payload = {
+    'username-input-': '<userid>',
+    'password-input': '<password>'
+}
+
+with requests.Session() as session:
+    post = session.post(POSTLOGINURL, data=payload)
+    r = session.get(REQUESTURL)
+    print(r.text)			
