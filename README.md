@@ -1,3 +1,3 @@
-# Scrapping_scripts
+# Scrapping_scripts-simple_dom_parser 
 
-some scrapping scripts written in python and php
+scrapping scripts written in python and php
